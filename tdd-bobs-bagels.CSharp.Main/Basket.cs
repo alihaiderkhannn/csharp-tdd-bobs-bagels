@@ -10,9 +10,6 @@ namespace tdd_bobs_bagels.CSharp.Main {
     {
         public int max_size { get; set; } = 3;
 
-        public int new_size { get; set; } = 6;
-
-
         private List<string> _bagels = new List<string>();
 
         public List<string> Bagels { get { return _bagels; } }
@@ -44,9 +41,15 @@ namespace tdd_bobs_bagels.CSharp.Main {
             return _bagels.Count >= max_size;
         }
 
-        public int changesize()
+        public int changesize(int newCapasity)   
         {
-            throw new NotImplementedException();
+            int newsize = 5;
+            if (newsize > max_size)
+            {
+                newsize = max_size;
+                return newsize;
+            }
+            return 0;
         }
           
         

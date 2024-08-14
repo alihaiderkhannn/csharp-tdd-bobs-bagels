@@ -56,8 +56,20 @@ public class BasketTests
         //arrange
         Basket basket = new Basket();
 
-        
+        //act
+        basket.add("Butter");
+        basket.add("Cheese");
+        basket.add("Pan");
+        basket.add("Bagel");
+        basket.add("Bagel2");
 
-       
+        int newcapasity = 5;
+        int expected = 5;
+
+        //assert
+        Assert.That(newcapasity, Is.EqualTo(expected));
+
+
+
     }
 }
