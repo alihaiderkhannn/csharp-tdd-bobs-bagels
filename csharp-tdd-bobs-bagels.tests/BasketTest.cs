@@ -50,4 +50,14 @@ public class BasketTests
         //assert
         Assert.IsTrue(result);
     }
+    [Test]
+    public void changecapasity()
+    {
+        //arrange
+        Basket basket = new Basket();
+
+        
+
+       
+    }
 }
