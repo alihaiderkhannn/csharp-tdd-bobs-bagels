@@ -31,4 +31,25 @@ public class BasketTests
         Assert.IsFalse(basket.Bagels.Contains(bagel2));
 
     }
+
+    [Test]
+
+    public void basketIsFull()
+    {
+        //arrange
+        Basket basket = new Basket();
+
+        //act
+        basket.add("Butter");
+        basket.add("Cheese");
+        basket.add("Pan");
+
+        bool result = basket.BasketisFull();
+
+
+        //assert
+        Assert.IsTrue(result);
+
+
+    }
 }

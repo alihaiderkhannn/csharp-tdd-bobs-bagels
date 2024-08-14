@@ -8,6 +8,8 @@ using System.Threading.Tasks;
 namespace tdd_bobs_bagels.CSharp.Main {
     public class Basket
     {
+        public int max_size { get; set; } = 3;
+
         private List<string> _bagels = new List<string>();
 
         public List<string> Bagels { get { return _bagels; } }
@@ -34,6 +36,18 @@ namespace tdd_bobs_bagels.CSharp.Main {
             return true;
             
         }
+        public bool BasketisFull()
+        {
+            throw new NotImplementedException();  
+            
+        }
+
+       
+
+
+
+
+        
 
     }
 }
