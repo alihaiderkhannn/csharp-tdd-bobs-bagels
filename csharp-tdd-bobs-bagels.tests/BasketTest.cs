@@ -10,12 +10,25 @@ public class BasketTests
         //arrange
         Basket basket = new Basket();
 
-        //execute
+        //act
         string bagel = "Ali";
         basket.add(bagel);
 
-        //verify
+        //assert
         Assert.IsTrue(basket.Bagels.Contains(bagel));
+    }
+    [Test]
+    public void removeBagelTest()
+    {
+        //arrange
+        Basket basket = new Basket();
+
+        //act
+        string bagel2 = "Haider";
+        basket.remove(bagel2);
+
+
+        //assert
 
     }
 }
