@@ -36,9 +36,14 @@ namespace tdd_bobs_bagels.CSharp.Main {
             return true;
             
         }
-        public bool BasketisFull()
+        public bool basketisFull()
         {
-            throw new NotImplementedException();  
+            return _bagels.Count >= max_size;
+        }
+          
+        
+        
+            
             
         }
 
@@ -50,6 +55,7 @@ namespace tdd_bobs_bagels.CSharp.Main {
         
 
     }
-}
+
+
    
 

@@ -44,12 +44,10 @@ public class BasketTests
         basket.add("Cheese");
         basket.add("Pan");
 
-        bool result = basket.BasketisFull();
+        bool result = basket.basketisFull();
 
 
         //assert
         Assert.IsTrue(result);
-
-
     }
 }
