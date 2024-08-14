@@ -11,9 +11,16 @@ namespace tdd_bobs_bagels.CSharp.Main {
         private List<string> _bagels = new List<string>();
 
         public List<string> Bagels { get { return _bagels; } }
-        public void add(string bagel)
+        public bool add(string bagel)
         {
-            throw new NotImplementedException();
+            _bagels.Add(bagel);
+            
+            if (_bagels.Contains(bagel))
+            {
+                return true;
+            }
+
+            return false;
         }
     }
 }
