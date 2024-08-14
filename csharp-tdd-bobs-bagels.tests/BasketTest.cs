@@ -24,11 +24,11 @@ public class BasketTests
         Basket basket = new Basket();
 
         //act
-        string bagel2 = "Haider";
+        string bagel2 = "haider";
         basket.remove(bagel2);
 
-
         //assert
+        Assert.IsFalse(basket.Bagels.Contains(bagel2));
 
     }
 }

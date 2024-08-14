@@ -23,10 +23,18 @@ namespace tdd_bobs_bagels.CSharp.Main {
             return false;
         }
 
-        public void remove(string bagel2)
+        public bool remove(string bagel2)
         {
-            throw new NotImplementedException();
+            _bagels.Remove(bagel2);
+
+            if (_bagels.Contains(bagel2))
+            {
+                return false;
+            }
+            return true;
+            
         }
+
     }
 }
    
