@@ -69,6 +69,31 @@ public class BasketTests
         //assert
         Assert.That(newcapasity, Is.EqualTo(expected));
 
+    }
+    public void removeNotExistingItem()
+    {
+        //arrange
+        Basket basket = new Basket();
+
+        
+        //act
+        string bagel1 = "butter";
+        string bagel2 = "cheese";
+        string notExisting = "beef";
+          
+
+        basket.add(bagel1);
+        basket.add(bagel2);
+
+        bool expected = false;
+
+        bool result = basket.remove(notExisting);
+
+
+        //assert
+        Assert.AreEqual(expected, result);
+       
+
 
 
     }
