@@ -53,7 +53,17 @@ namespace tdd_bobs_bagels.CSharp.Main {
         }
           
         
-        public bool removeNotExisting
+        public bool CheckNotExisting()
+        {
+           string notExistingBagel = "Cheese";
+
+            if (_bagels.Contains(notExistingBagel))
+            {
+                return true;
+            }
+            return false;
+
+        }
             
             
         }
